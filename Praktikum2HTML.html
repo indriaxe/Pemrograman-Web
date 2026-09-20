@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Berita Desa - Sistem Informasi Desa Melung</title>
+
+    <link rel="stylesheet" href="Praktikum2CSS.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-top">
+            <div class="header-inner">
+
+                <div class="brand">
+                    <div class="logo-circle">
+                        <img src="https://melung.desa.id/themes/images/logo-bms.png" alt="Logo Desa Melung">
+                    </div>
+                        <div class="site-title">
+                            <span>SISTEM INFORMASI DESA</span>
+                            <h1>Melung</h1>
+                        </div>
+                </div>
+
+
+                <div class="date-time">
+                    <span>◷</span>
+                    <span id="jamTanggal">Memuat waktu...</span>
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="navbar">
+
+            <div class="nav-inner">
+
+                <div class="navitem">
+                    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Profil <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <div class="dropdown">
+                        <a href="#">Tentang Kami</a>
+                        <a href="#">Visi Dan Misi</a>
+                        <a href="#">Sejarah Desa</a>
+                        <a href="#">Letak Geografis Desa</a>
+                        <a href="#">Peta Desa</a>
+                        <a href="#">Prestasi Desa</a>
+                    </div>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Statistik <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <div class="dropdown">
+                        <a href="#">Jumlah KK</a>
+                    </div>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Potensi Desa <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <div class="dropdown">
+                        <a href="#">Sumber Daya Alam</a>
+                        <a href="#">Sumber Daya Manusia</a>
+                        <a href="#">Kesenian Dan Budaya</a>
+                        <a href="#">Prasarana Dan Sarana</a>
+                    </div>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Kelembagaan <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <div class="dropdown">
+                        <a href="#">Pemerintah Desa</a>
+                        <a href="#">Lembaga Kemasyarakatan Desa</a>
+                        <a href="#">Lembaga Adat Desa</a>
+                        <a href="#">Kelompok Tani</a>
+                        <a href="#">Organisasi Sosial Keagamaaan</a>
+                        <a href="#">Organisasi Sosial Kemasyarakatan</a>
+                        <a href="#">Lembaga Lainnya</a>
+                    </div>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Transparansi</a>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Produk Hukum <i class="fa-solid fa-chevron-down"></i></a>
+
+                     <div class="dropdown">
+                        <a href="#">Peraturan Desa</a>
+                        <a href="#">Peraturan Kepala Desa</a>
+                        <a href="#">SK Kepala Desa</a>
+                     </div>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Desa Wisata <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <div class="dropdown">
+                        <a href="#">Profil Wisata Desa</a>
+                        <a href="#">Link Media Sosial</a>
+                        <a href="#">Peta Desa Wisata</a>
+                        <a href="#">Wisata Pagubugan</a>
+                     </div>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Bumdes <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <div class="dropdown">
+                        <a href="#">Dasar, Tujuan, Dan Fungsi Bumdes</a>
+                        <a href="#">Profil Bumdesa</a>
+                        <a href="#">Visi Dan Misi Bumdesa</a>
+                        <a href="#">Program Kerja Bumdesa</a>
+                        <a href="#">Struktur Organisasi Bumdesa</a>
+                        <a href="#">Unit Usaha</a>
+                        <a href="#">Lambang Bumdesa</a>
+                        <a href="#">Kontak Bumdesa</a>
+                    </div>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Ppid <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <div class="dropdown">
+                        <a href="#">SK Ppid</a>
+                        <a href="#">Laporan Berkala</a>
+                    </div>
+                </div>
+
+                <div class="navitem">
+                    <a href="berita.html" style="color:var(--hijau-tua);">Kabar Desa</a>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Pelayanan <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <div class="dropdown">
+                        <a href="#">Pelayanan Desa</a>
+                        <a href="#">Pelayanan Kependudukan</a>
+                    </div>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Festival Desa</a>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Kontak Kami</a>
+                </div>
+
+                <div class="navitem">
+                    <a href="#">Desa Anti Korupsi <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <div class="dropdown">
+                        <a href="#">Penguatan Tata Laksana </a>
+                        <a href="#">Penguatan Pengawasan </a>
+                        <a href="#">Penguatan Kualitas Pelayanan Publik </a>
+                        <a href="#">Penguatan Partisipasi Masyarakat </a>
+                        <a href="#">Kearifan Lokal </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-pattern"></div>
+
+        <div class="hero-inner">
+
+            <div class="hero-content">
+
+                <div class="berita-hero-title">
+                    <h1>Kabar &amp; Berita Terkini<span class="baris-2">Desa Melung</span></h1>
+                    <p>Informasi resmi, perkembangan pembangunan, dan kabar terbaru seputar kegiatan masyarakat Melung.</p>
+                </div>
+
+            </div>
+
+            <a href="#" class="back-link">
+                <i class="fa-solid fa-house"></i> &nbsp; Kembali ke Beranda
+            </a>
+
+        </div>
+
+    </section>
+
+    <div class="berita-page-wrap">
+
+        <main>
+
+            <div class="berita-toolbar">
+
+                <div class="berita-toolbar-head">
+                    <div class="berita-toolbar-titlebar">
+                        <span class="berita-toolbar-icon"><i class="fa-solid fa-table-cells-large"></i></span>
+                        <h2>Seluruh Berita Desa</h2>
+                    </div>
+                    <p class="berita-toolbar-sub">Publikasi dan berita resmi yang dirilis Pemerintah Melung.</p>
+                </div>
+
+                <div class="berita-total-pill" id="totalPill">
+                    <i class="fa-solid fa-newspaper"></i> Total <span id="jumlahBerita">0</span> Berita
+                </div>
+
+                <div class="berita-toolbar-divider"></div>
+
+            </div>
+
+            <div class="berita-grid" id="beritaGrid">
+                <!-- kartu berita dirender otomatis oleh JavaScript -->
+            </div>
+
+            <div class="pagination" id="pagination">
+                <!-- nomor halaman dirender otomatis oleh JavaScript -->
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <div>
+
+                <h3>Desa Melung</h3>
+
+                <p>
+                    Kabupaten Banyumas
+                </p>
+
+                <p>
+                    Website resmi Desa Melung, Kabupaten Banyumas.
+                    Menyajikan layanan publik mandiri, transparansi anggaran,
+                    serta informasi perkembangan pembangunan wilayah secara
+                    akurat dan terbuka.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Statistik Pengunjung</h3>
+
+                <div class="stat-row">
+                    <span>Hari ini</span>
+                    <span>173</span>
+                </div>
+
+                <div class="stat-row">
+                    <span>Bulan ini</span>
+                    <span>3.419</span>
+                </div>
+
+                <div class="stat-row">
+                    <span>Total Pengunjung</span>
+                    <span>78.320</span>
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3>Kontak Desa</h3>
+
+                <p>
+                    Jalan Raya No.50-51, Dusun II,
+                    Melung, Kec. Kedungbanteng
+                </p>
+
+                <p>
+                    Email: melung@gmail.com
+                </p>
+
+                <p>
+                    Telepon / WA: -
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Pemerintah Desa Melung.
+            Dikembangkan bersama Dinpermasdes &amp; Dinkominfo
+            Kabupaten Banyumas.
+            Hak Cipta Dilindungi.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ====================== POPUP DETAIL BERITA + KOMENTAR ====================== -->
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+
+            <div class="modal-head">
+                <button type="button" class="modal-close" id="modalClose" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div class="modal-meta">
+                    <span id="modalKategori">▣ Kategori</span>
+                    <span id="modalTanggal">▣ Tanggal</span>
+                    <span id="modalDilihat">◉ Dilihat</span>
+                </div>
+
+                <h2 id="modalJudul">Judul Berita</h2>
+            </div>
+
+            <div class="modal-body">
+
+                <div id="modalIsi">
+                    <!-- isi artikel dirender otomatis -->
+                </div>
+
+                <div class="comment-box" style="margin-top:30px;">
+
+                    <h3>Komentar (<span id="jumlahKomentar">0</span>)</h3>
+
+                    <div class="modal-komentar-list" id="modalKomentarList">
+                        <!-- daftar komentar yang sudah ada dirender otomatis -->
+                    </div>
+
+                    <h3 style="margin-top:26px;">Tulis Komentar</h3>
+
+                    <!--
+                        Form ini dibuat mengikuti pola form komentar Laravel.
+                        Saat diintegrasikan ke aplikasi Laravel:
+                        1. Ganti "action" di bawah dengan route Laravel, contoh:
+                           action="{{ route('berita.komentar.store', $berita->id) }}"
+                        2. Ganti <input type="hidden" name="_token" ...> dengan directive @csrf
+                        3. Tampilkan error validasi dari $errors->first('field') pada elemen .field-error
+                        4. Ganti render daftar komentar statis di atas dengan @foreach($berita->komentars as $k)
+                    -->
+                    <form id="formKomentar" method="POST" action="/berita/komentar" novalidate>
+
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input type="hidden" name="berita_id" id="inputBeritaId" value="">
+
+                        <label for="isiKomentar">Komentar Anda *</label>
+                        <textarea
+                            id="isiKomentar"
+                            name="komentar"
+                            rows="4"
+                            placeholder="Tulis komentar Anda di sini..."
+                        ></textarea>
+                        <div class="field-error" id="errKomentar">Komentar wajib diisi.</div>
+
+                        <label for="namaKomentar">Nama Pengirim *</label>
+                        <input
+                            type="text"
+                            id="namaKomentar"
+                            name="nama"
+                            placeholder="Nama Anda"
+                        >
+                        <div class="field-error" id="errNama">Nama wajib diisi.</div>
+
+                        <label for="hpKomentar">No. Telepon / WA *</label>
+                        <input
+                            type="text"
+                            id="hpKomentar"
+                            name="no_hp"
+                            placeholder="08xxxxxxxxxx"
+                        >
+                        <div class="field-error" id="errHp">Nomor telepon wajib diisi.</div>
+
+                        <button type="submit">
+                            Kirim Komentar
+                        </button>
+
+                        <div class="alert-sukses" id="alertSukses">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Komentar berhasil dikirim dan menunggu moderasi.
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+    (function () {
+
+        // -----------------------------------------------------------------
+        // DATA BERITA (dummy). Di Laravel, ganti array ini dengan data yang
+        // dikirim dari controller, contoh: const beritaData = @json($beritaList);
+        // -----------------------------------------------------------------
+        const beritaData = [
+            {
+                id: 1,
+                judul: "Menggores Kisah di Desa Melung",
+                kategori: "Berita Desa",
+                tanggal: "08 Des 2025",
+                dilihat: "1.204",
+                thumb: "MK",
+                gambar: "https://picsum.photos/seed/melung1/400/240",
+                ringkasan: "Warga Desa Melung bersama karang taruna menggelar kegiatan literasi budaya untuk mendokumentasikan kisah-kisah lisan warisan leluhur desa.",
+                isi: [
+                    "Kegiatan ini digagas sebagai upaya menjaga kelestarian cerita rakyat dan sejarah lisan yang selama ini hanya diwariskan dari mulut ke mulut oleh sesepuh desa.",
+                    "Sejumlah tokoh masyarakat turut hadir untuk berbagi kisah, mulai dari asal-usul nama Melung hingga cerita perjuangan warga desa pada masa lampau.",
+                    "Hasil dokumentasi rencananya akan disusun menjadi buku kecil yang dapat dibaca oleh generasi muda desa."
+                ],
+                komentar: [
+                    { nama: "Pak Slamet", tanggal: "09 Des 2025", isi: "Kegiatan yang sangat bagus, semoga cerita-cerita lama tidak hilang." },
+                    { nama: "Rina A.", tanggal: "10 Des 2025", isi: "Terima kasih sudah didokumentasikan, jadi anak-anak bisa belajar sejarah desa." }
+                ]
+            },
+            {
+                id: 2,
+                judul: "Petani Wanita Yang Perkasa",
+                kategori: "Kegiatan Desa",
+                tanggal: "18 Apr 2025",
+                dilihat: "986",
+                thumb: "PM",
+                gambar: "https://picsum.photos/seed/melung2/400/240",
+                ringkasan: "Kelompok tani wanita Desa Melung menunjukkan semangat luar biasa dalam mengelola lahan pertanian organik di tengah keterbatasan sumber daya.",
+                isi: [
+                    "Kelompok tani wanita yang beranggotakan lebih dari 20 orang ini rutin mengelola lahan bersama untuk menanam sayuran organik.",
+                    "Hasil panen tidak hanya digunakan untuk konsumsi keluarga, tetapi juga dijual melalui BUMDes sebagai tambahan pendapatan rumah tangga.",
+                    "Program ini mendapat dukungan pendampingan dari dinas pertanian kabupaten."
+                ],
+                komentar: [
+                    { nama: "Bu Wati", tanggal: "19 Apr 2025", isi: "Bangga sama ibu-ibu tani di desa kita!" }
+                ]
+            },
+            {
+                id: 3,
+                judul: "Keterbelakangan Dan Kemiskinan",
+                kategori: "Berita Desa",
+                tanggal: "11 Jul 2025",
+                dilihat: "742",
+                thumb: "KD",
+                gambar: "https://picsum.photos/seed/melung3/400/240",
+                ringkasan: "Pemerintah desa memaparkan data terkini terkait tingkat kesejahteraan warga serta program-program percepatan pengentasan kemiskinan.",
+                isi: [
+                    "Dalam musyawarah desa, pemerintah desa memaparkan data keluarga prasejahtera beserta rencana intervensi program bantuan.",
+                    "Beberapa program yang disiapkan antara lain pelatihan keterampilan, bantuan modal usaha mikro, dan subsidi pendidikan anak.",
+                    "Warga diminta aktif melaporkan kondisi riil di lapangan agar data yang digunakan lebih akurat."
+                ],
+                komentar: []
+            },
+            {
+                id: 4,
+                judul: "Manfaat Portal Atau Website Desa",
+                kategori: "Kegiatan Desa",
+                tanggal: "14 Jan 2025",
+                dilihat: "1.532",
+                thumb: "MP",
+                gambar: "https://picsum.photos/seed/melung4/400/240",
+                ringkasan: "Website resmi desa mempermudah warga mengakses informasi layanan publik, transparansi anggaran, hingga pengumuman kegiatan secara real-time.",
+                isi: [
+                    "Kehadiran website desa memberikan banyak manfaat, mulai dari kemudahan akses informasi hingga peningkatan transparansi pengelolaan anggaran.",
+                    "Warga kini dapat memantau perkembangan pembangunan desa serta mengajukan layanan administrasi secara online.",
+                    "Ke depan, fitur pengaduan masyarakat juga akan diintegrasikan ke dalam portal ini."
+                ],
+                komentar: [
+                    { nama: "Dedi K.", tanggal: "15 Jan 2025", isi: "Sangat membantu, jadi tidak perlu bolak-balik ke kantor desa." },
+                    { nama: "Siti M.", tanggal: "16 Jan 2025", isi: "Semoga fitur pengaduannya segera aktif." }
+                ]
+            },
+            {
+                id: 5,
+                judul: "Gotong Royong Bersihkan Sungai",
+                kategori: "Kegiatan Desa",
+                tanggal: "02 Feb 2025",
+                dilihat: "610",
+                thumb: "GR",
+                gambar: "https://picsum.photos/seed/melung5/400/240",
+                ringkasan: "Warga bersama perangkat desa menggelar kerja bakti membersihkan aliran sungai guna mencegah banjir dan menjaga kebersihan lingkungan.",
+                isi: [
+                    "Kegiatan gotong royong ini diikuti oleh puluhan warga dari berbagai dusun, dibantu oleh perangkat desa dan anggota karang taruna.",
+                    "Selain membersihkan sampah, warga juga menanam pohon di sepanjang bantaran sungai untuk mencegah erosi.",
+                    "Kegiatan serupa direncanakan akan digelar rutin setiap tiga bulan sekali."
+                ],
+                komentar: [
+                    { nama: "Agus P.", tanggal: "03 Feb 2025", isi: "Alhamdulillah sungainya jadi lebih bersih." }
+                ]
+            },
+            {
+                id: 6,
+                judul: "Pelatihan UMKM Digital untuk Warga",
+                kategori: "Berita Desa",
+                tanggal: "20 Mar 2025",
+                dilihat: "845",
+                thumb: "UD",
+                gambar: "https://picsum.photos/seed/melung6/400/240",
+                ringkasan: "Pelaku UMKM desa dibekali kemampuan pemasaran digital agar produk lokal dapat menjangkau pasar yang lebih luas melalui media sosial.",
+                isi: [
+                    "Pelatihan yang diselenggarakan oleh BUMDes ini diikuti oleh puluhan pelaku UMKM di Desa Melung.",
+                    "Materi yang diberikan meliputi cara membuat konten produk, pemasaran melalui media sosial, hingga pengelolaan toko online.",
+                    "Diharapkan produk unggulan desa seperti kopi dan hasil kerajinan dapat lebih dikenal luas."
+                ],
+                komentar: []
+            }
+        ];
+
+        const beritaGrid = document.getElementById('beritaGrid');
+        const jumlahBerita = document.getElementById('jumlahBerita');
+
+        // Total berita keseluruhan (di Laravel: ganti dengan $berita->total() dari paginator)
+        const TOTAL_BERITA = 372;
+        const TOTAL_HALAMAN = 42;
+        const HALAMAN_AKTIF = 1;
+
+        function renderGrid(data) {
+            beritaGrid.innerHTML = '';
+
+            if (data.length === 0) {
+                beritaGrid.innerHTML = '<p style="grid-column:1/-1;color:var(--abu);font-size:14px;">Berita tidak ditemukan.</p>';
+                return;
+            }
+
+            data.forEach(function (b) {
+                const card = document.createElement('div');
+                card.className = 'berita-card';
+                card.setAttribute('data-id', b.id);
+                card.innerHTML =
+                    '<div class="berita-card-img">' +
+                        '<img src="' + b.gambar + '" alt="' + b.judul + '" loading="lazy">' +
+                        '<span class="berita-card-badge">BERITA DESA</span>' +
+                    '</div>' +
+                    '<div class="berita-card-body">' +
+                        '<h3>' + b.judul + '</h3>' +
+                        '<div class="berita-card-foot">' +
+                            '<div class="berita-card-info">' +
+                                '<span><i class="fa-solid fa-calendar-days"></i> ' + b.tanggal + '</span>' +
+                                '<span><i class="fa-solid fa-eye"></i> ' + b.dilihat + '</span>' +
+                            '</div>' +
+                            '<span class="berita-btn-baca">Baca <i class="fa-solid fa-arrow-right"></i></span>' +
+                        '</div>' +
+                    '</div>';
+
+                card.addEventListener('click', function () {
+                    bukaModal(b.id);
+                });
+
+                beritaGrid.appendChild(card);
+            });
+        }
+
+        function renderPagination() {
+            const pag = document.getElementById('pagination');
+            let html = '<a href="#"><i class="fa-solid fa-chevron-left"></i></a>';
+
+            const nomor = [];
+            for (let i = 1; i <= Math.min(10, TOTAL_HALAMAN); i++) nomor.push(i);
+            if (TOTAL_HALAMAN > 10) {
+                nomor.push('...');
+                nomor.push(TOTAL_HALAMAN - 1);
+                nomor.push(TOTAL_HALAMAN);
+            }
+
+            nomor.forEach(function (n) {
+                if (n === '...') {
+                    html += '<a href="#" class="dots">...</a>';
+                } else {
+                    html += '<a href="#" class="' + (n === HALAMAN_AKTIF ? 'active' : '') + '">' + n + '</a>';
+                }
+            });
+
+            html += '<a href="#"><i class="fa-solid fa-chevron-right"></i></a>';
+            pag.innerHTML = html;
+        }
+
+        renderGrid(beritaData);
+        renderPagination();
+        jumlahBerita.textContent = TOTAL_BERITA;
+
+
+        // -----------------------------------------------------------------
+        // POPUP / MODAL DETAIL BERITA + KOMENTAR
+        // -----------------------------------------------------------------
+        const modalOverlay = document.getElementById('modalOverlay');
+        const modalKategori = document.getElementById('modalKategori');
+        const modalTanggal = document.getElementById('modalTanggal');
+        const modalDilihat = document.getElementById('modalDilihat');
+        const modalJudul = document.getElementById('modalJudul');
+        const modalIsi = document.getElementById('modalIsi');
+        const modalKomentarList = document.getElementById('modalKomentarList');
+        const jumlahKomentar = document.getElementById('jumlahKomentar');
+        const inputBeritaId = document.getElementById('inputBeritaId');
+        const formKomentar = document.getElementById('formKomentar');
+        const alertSukses = document.getElementById('alertSukses');
+
+        function bukaModal(id) {
+            const b = beritaData.find(function (item) { return item.id === id; });
+            if (!b) return;
+
+            modalKategori.textContent = '▣ ' + b.kategori;
+            modalTanggal.textContent = '▣ ' + b.tanggal;
+            modalDilihat.textContent = '◉ ' + b.dilihat + ' Dilihat';
+            modalJudul.textContent = b.judul;
+
+            modalIsi.innerHTML = b.isi.map(function (p) { return '<p>' + p + '</p>'; }).join('');
+
+            renderKomentar(b.komentar);
+
+            inputBeritaId.value = b.id;
+
+            alertSukses.classList.remove('aktif');
+            formKomentar.reset();
+            inputBeritaId.value = b.id;
+            clearErrors();
+
+            modalOverlay.classList.add('aktif');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function renderKomentar(list) {
+            jumlahKomentar.textContent = list.length;
+
+            if (list.length === 0) {
+                modalKomentarList.innerHTML = '<p class="komentar-kosong">Belum ada komentar. Jadilah yang pertama berkomentar.</p>';
+                return;
+            }
+
+            modalKomentarList.innerHTML = list.map(function (k) {
+                return '<div class="komentar-item">' +
+                    '<span class="k-nama">' + k.nama + '</span>' +
+                    '<span class="k-tanggal">' + k.tanggal + '</span>' +
+                    '<div class="k-isi">' + k.isi + '</div>' +
+                    '</div>';
+            }).join('');
+        }
+
+        function tutupModal() {
+            modalOverlay.classList.remove('aktif');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('modalClose').addEventListener('click', tutupModal);
+
+        modalOverlay.addEventListener('click', function (e) {
+            if (e.target === modalOverlay) tutupModal();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && modalOverlay.classList.contains('aktif')) tutupModal();
+        });
+
+        function clearErrors() {
+            ['errKomentar', 'errNama', 'errHp'].forEach(function (id) {
+                document.getElementById(id).classList.remove('aktif');
+            });
+        }
+
+        // -----------------------------------------------------------------
+        // SUBMIT KOMENTAR
+        // Untuk demo ini komentar hanya ditambahkan langsung ke tampilan.
+        // Pada implementasi Laravel sesungguhnya:
+        //   - hapus e.preventDefault() di bawah (atau ganti dengan fetch()
+        //     ke route POST Laravel yang memakai @csrf)
+        //   - biarkan validasi server-side Laravel yang menentukan pesan error
+        // -----------------------------------------------------------------
+        formKomentar.addEventListener('submit', function (e) {
+            e.preventDefault();
+            clearErrors();
+
+            const isi = document.getElementById('isiKomentar').value.trim();
+            const nama = document.getElementById('namaKomentar').value.trim();
+            const hp = document.getElementById('hpKomentar').value.trim();
+
+            let valid = true;
+            if (isi === '') { document.getElementById('errKomentar').classList.add('aktif'); valid = false; }
+            if (nama === '') { document.getElementById('errNama').classList.add('aktif'); valid = false; }
+            if (hp === '') { document.getElementById('errHp').classList.add('aktif'); valid = false; }
+
+            if (!valid) return;
+
+            const id = parseInt(inputBeritaId.value, 10);
+            const b = beritaData.find(function (item) { return item.id === id; });
+
+            b.komentar.push({
+                nama: nama,
+                tanggal: 'Baru saja',
+                isi: isi
+            });
+
+            renderKomentar(b.komentar);
+            formKomentar.reset();
+            inputBeritaId.value = id;
+            alertSukses.classList.add('aktif');
+        });
+
+
+        // -----------------------------------------------------------------
+        // Jam & tanggal berjalan di header
+        // -----------------------------------------------------------------
+        const namaHari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', "Jum'at", 'Sabtu'];
+        const namaBulan = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'];
+
+        function updateJam() {
+            const now = new Date();
+            const teks = namaHari[now.getDay()] + ', ' +
+                now.getDate() + ' ' + namaBulan[now.getMonth()] + ' ' + now.getFullYear() +
+                ' • ' +
+                String(now.getHours()).padStart(2, '0') + ':' +
+                String(now.getMinutes()).padStart(2, '0') + ':' +
+                String(now.getSeconds()).padStart(2, '0') + ' WIB';
+            document.getElementById('jamTanggal').textContent = teks;
+        }
+        updateJam();
+        setInterval(updateJam, 1000);
+
+    })();
+    </script>
+
+</body>
+</html>
